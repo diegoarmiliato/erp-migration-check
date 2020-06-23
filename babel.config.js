@@ -6,20 +6,22 @@ module.exports = {
         targets: {
           node: 'current'
         }
-      }
+      },
     ],
     '@babel/preset-typescript'
   ],
   plugins: [
-    ['module-resolver', {
+    [ 'module-resolver', {
       alias: {
         '@config': './src/config',
         '@models': './src/models',
         '@controllers': './src/controllers',
+        '@database': './src/database',
         '@views': './src/views'
       }
-    }]
-  ],
+    },
+  ]
+  ],  
   ignore: [
     '**/*.spec.ts'
   ]
